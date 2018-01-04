@@ -27,26 +27,30 @@ header {
   margin-bottom: 2.5rem;
 }
 
+header>div {
+  text-align: center;
+}
+
 h1,
 h2,
 li {
   font-weight: 400;
-  color: rgb(235, 228, 228);
+  color: rgb(0, 0, 0);
 }
 
 h1 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin-bottom: 0.25rem;
   transition: all 0.5s ease-out 0.5s;
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   transition: all 0.5s cubic-bezier(0, 0.1, 0.8, 0.1) 1.5s;
 }
 
 .transparent {
-  opacity: 0;
+  display: none;
 }
 
 ul {
@@ -69,7 +73,7 @@ main {
   height: 100%;
   width: 75%;
   padding: 40px 50px;
-  background: rgba(0,0,0,0.9)
+  /* background: rgba(59,90,99,1) */
 }
 
 .p-container {
@@ -78,9 +82,10 @@ main {
 }
 
 .p-item {
-  background: white;
+  border-radius: 2px;
   width: 32%;
   padding: 1rem;
+  color: rgba(59,90,99,1)
 }
 
 
@@ -198,6 +203,10 @@ main {
     align-items: center;
   }
 
+  header>div {
+    text-align: start;
+  }
+
   nav {
     padding: 5px 20px;
     background: black;
@@ -210,13 +219,13 @@ main {
   }
 
   .transparent {
-    opacity: 100;
+    display: inline;
   }
 }
 
-@media screen and (max-width: 400px) and (max-height: 1000px) {
+@media screen and (max-width: 450px) and (max-height: 1000px) {
   h1 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   h2,
   li {
