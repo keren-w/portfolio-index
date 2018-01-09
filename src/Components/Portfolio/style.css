@@ -1,0 +1,22 @@
+#portfolio {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.p-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+.p-item {
+  border-radius: 2px;
+  width: 32%;
+  padding: 1rem;
+  color: rgba(59, 90, 99, 1);
+}
+
+.project-title {
+  font-size: 1.5rem;
+}

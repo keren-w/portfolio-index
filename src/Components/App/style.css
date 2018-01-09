@@ -1,0 +1,17 @@
+#page-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+/************************* media queries **************************/
+
+@media screen and (max-width: 900px) {
+  #page-container {
+    flex-direction: column;
+  }
+}
+
+main {
+  width: 75%;
+}

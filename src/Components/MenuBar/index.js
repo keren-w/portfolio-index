@@ -1,20 +1,23 @@
-import React, { Component } from 'react';
-import styles from './menubar.css';
+import React from 'react';
+import {Link} from 'react-router-dom';
+import styles from './style.css';
 
 export default () => {
     return (
-        <div id="sidebar">
+        <div id={styles.menubar}>
           <div>
               {/* <img src="../images/prof.gif" alt="Keren Wigelman"> */}
               <header>
-                  <div>
-                      <h1>Keren Wigelman<span className="transparent">&nbsp;/&nbsp;</span></h1>
-                      <h2>Fullstack Developer</h2>
-                  </div>
+                  <Link to="/">
+                    <div>
+                        <h1>Keren Wigelman<span className={styles.transparent}>&nbsp;/&nbsp;</span></h1>
+                        <h2>Fullstack Developer</h2>
+                    </div>
+                  </Link>
               </header>
               <nav>
                   <ul>
-                      <li>Portfolio</li>
+                      <Link to="/portfolio"><li>Portfolio</li></Link>
                       <li>Resume</li>
                       <li>Contact</li>
                   </ul>
