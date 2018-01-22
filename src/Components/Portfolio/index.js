@@ -6,6 +6,7 @@ import projects from "../../static/json/projects.json";
 export default () => {
   return (
     <div id={styles.portfolio}>
+      <div className={styles['section-title']}></div>
       <div className={styles["projects-container"]}>
         {projects.map(item => <Project key={item.id} project={item} />)}
       </div>

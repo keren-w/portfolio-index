@@ -1,37 +1,47 @@
 #menubar {
-  width: 25%;
   height: 100%;
-  padding: 40px 10px;
+  padding: 2rem 0;
   display: flex;
   justify-content: center;
-  background: url("../../static/images/background-p.jpg") no-repeat fixed;
-  color: white;
+  color: black;
+  padding-right: 1rem;
+  border-right: 0.5px solid white;
 }
 
 #menubar header {
-  margin-bottom: 2.5rem;
+  height: 6rem;
 }
 
-#menubar header > a > div {
-  text-align: center;
+.page-title {
+  padding-top: 0.5rem;
+  border-top: 0.5px solid;
 }
 
-#menubar h1,
-#menubar h2,
 #menubar li {
   font-weight: 400;
+  border-bottom: 0.5px solid;
 }
 
-#menubar h1 {
-  font-size: 2rem;
+.name,
+.profession {
   font-weight: 700;
-  margin-bottom: 0.25rem;
+  font-size: 1.3rem;
+  /* background: #F0EFEC; */
+}
+
+.name {
   transition: all 0.5s ease-out 0.5s;
 }
 
-#menubar h2 {
-  font-size: 1.5rem;
+.profession {
   transition: all 0.5s cubic-bezier(0, 0.1, 0.8, 0.1) 1.5s;
+  color: #00A99D;
+  text-align: right;
+}
+
+ul {
+  padding-top: 1rem;
+  border-top: 0.5px solid;
 }
 
 #menubar li {
@@ -40,9 +50,10 @@
 }
 
 #menubar li:hover {
-  color: rgb(205, 160, 92);
-  border-bottom: 0.3rem solid rgb(205, 160, 92);
-  margin-bottom: 0.7rem;
+  color: #F79952;
+  font-weight: 700;
+  /* border-bottom: 0.3rem solid rgb(205, 160, 92);
+  margin-bottom: 0.7rem; */
   cursor: pointer;
 }
 
@@ -51,44 +62,21 @@
 }
 
 #menubar a:visited {
-  color: white;
+  color: black;
 }
 
 /************************* media queries **************************/
 
 @media screen and (min-width: 901px) and (max-width: 1100px) {
-  #menubar h1 {
+  .name {
     font-size: 1.5rem;
   }
-  #menubar h2,
+  .profession,
   #menubar li {
     font-size: 1.15rem;
   }
 }
 
-@media screen and (min-height: 1330px) {
-  #menubar {
-    background-size: cover;
-  }
-}
-
-@media screen and (max-height: 1000px) {
-  #menubar {
-    background-size: 79%;
-  }
-}
-
-@media screen and (max-height: 768px) {
-  #menubar {
-    background-size: 61%;
-  }
-}
-
-@media screen and (max-height: 600px) {
-  #menubar {
-    background-size: 44%;
-  }
-}
 
 /*portrait*/
 @media screen and (max-width: 900px) {
@@ -132,8 +120,8 @@
     align-items: flex-end;
   }
 
-  #menubar h1,
-  #menubar h2 {
+  .name,
+  .profession {
     transition: none;
   }
 }
@@ -160,18 +148,14 @@
     align-items: center;
   }
 
-  #menubar header > a > div {
-    text-align: start;
-  }
-
   #menubar nav {
     padding: 5px 20px;
     background: black;
     color: white;
   }
 
-  #menubar h1,
-  h2 {
+  .name,
+  .profession {
     display: inline-block;
   }
 
@@ -181,10 +165,10 @@
 }
 
 @media screen and (max-width: 450px) and (max-height: 1000px) {
-  #menubar h1 {
+  .name {
     font-size: 1.5rem;
   }
-  #menubar h2,
+  .profession,
   #menubar li {
     font-size: 1rem;
   }
