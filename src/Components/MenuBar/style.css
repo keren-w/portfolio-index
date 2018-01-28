@@ -1,55 +1,31 @@
 #menubar {
-  height: 100%;
-  padding: 2rem 0;
+  padding: 1rem 0;
+}
+
+#menubar div {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  color: black;
-  padding-right: 1rem;
-  border-right: 0.5px solid white;
-}
-
-#menubar header {
-  height: 6rem;
-}
-
-.page-title {
-  padding-top: 0.5rem;
-  border-top: 0.5px solid;
-}
-
-#menubar li {
-  font-weight: 400;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 0.25rem;
   border-bottom: 0.5px solid;
 }
 
-.name,
-.profession {
+.nav-categories {
+  display: flex;
+  transform: translateY(-4.5px);
+}
+
+.nav-categories li {
   font-weight: 700;
-  font-size: 1.3rem;
-  /* background: #F0EFEC; */
+  margin-left: 1rem;
 }
 
-.name {
-  transition: all 0.5s ease-out 0.5s;
+.nav-categories li:first-child {
+  margin-left:0;
 }
 
-.profession {
-  transition: all 0.5s cubic-bezier(0, 0.1, 0.8, 0.1) 1.5s;
-  color: #00A99D;
-  text-align: right;
-}
-
-ul {
-  padding-top: 1rem;
-  border-top: 0.5px solid;
-}
-
-#menubar li {
-  font-size: 1.15rem;
-  margin-bottom: 1rem;
-}
-
-#menubar li:hover {
+.nav-categories li:hover {
   color: #F79952;
   font-weight: 700;
   /* border-bottom: 0.3rem solid rgb(205, 160, 92);

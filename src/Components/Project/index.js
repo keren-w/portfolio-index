@@ -43,7 +43,7 @@ export default class project extends Component {
 
 const ProjectTitle = ({project}) => {
     return (
-        <h3 className={styles['project-title']}>{project.title}</h3>
+        <h3 className={styles['project-title']}>ada</h3>
     )
 }
 

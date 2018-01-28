@@ -6,6 +6,17 @@
   background: #DCE0DC;
 }
 
+#centered-content {
+  padding: 0 1rem;
+  width: 920px;
+  display: flex;
+  flex-direction: column;
+  background: #DCE0DC;
+}
+
+main {
+  height: 100%;
+}
 /************************* media queries **************************/
 
 @media screen and (max-width: 900px) {
@@ -15,6 +26,5 @@
 }
 
 main {
-  width: 75%;
   position: relative;
 }

@@ -12,13 +12,15 @@ class App extends Component {
   render() {
     return (
       <article id={styles['page-container']}>
-        <MenuBar />
-        <main>
-          <Route exact path="/" component={Homepage} />
-          <Route path="/portfolio" component={Portfolio} />
-          {/* <main /> */}
-          {/* <ViewPain /> */}
-        </main>
+        <div id={styles['centered-content']}>
+          <MenuBar />
+          <main>
+            <Route exact path="/" component={Homepage} />
+            <Route path="/portfolio" component={Portfolio} />
+            {/* <main /> */}
+            {/* <ViewPain /> */}
+          </main>
+        </div>
       </article>
     );
   }
