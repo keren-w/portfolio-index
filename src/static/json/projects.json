@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "id": 1,
         "title": "Mockbnb",
         "link-address": "mockbnb.kerenwebhome.com",
         "description": "An Airbnb homes serction Reimplemention",
@@ -9,7 +9,7 @@
         "project-main-image": ""
     }, 
     {
-        "id": "2",
+        "id": 2,
         "title": "hireMe",
         "link-address": "hireme.kerenwebhome.com",
         "description": "A job search MEAN stack application (mocked-up information)",
@@ -18,7 +18,7 @@
         "project-main-image": ""
     },
     {
-        "id": "3",
+        "id": 3,
         "title": "The Battleship Project",
         "link-address": "http://battleship.kerenwebhome.com/",
         "description": "The well-known game for 2-end users",

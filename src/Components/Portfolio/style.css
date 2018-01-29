@@ -3,20 +3,20 @@
   padding: 1rem;
 }
 
-.vertical-center-section {
+.section-vertical-centerer {
   height: 90%;
   display: flex;
   padding-top: 2rem;
 }
 
-.projects-container {
+.view-centerer {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.container-sizer {
+.view-sizer {
   width: 100%;
   max-height: 200px;
   height: 100%;
@@ -36,14 +36,11 @@
   font-size: 1rem;
   padding: 0.5rem 0;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .projects-preview {
   background: pink;
   width: 85%;
-}
-
-.projects-explained {
-  height: 100%;
   overflow: hidden;
 }
