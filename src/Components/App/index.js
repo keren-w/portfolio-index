@@ -15,7 +15,7 @@ class App extends Component {
         <div id={styles['centered-content']}>
           <MenuBar />
           <main>
-            <Route exact path="/" component={Homepage} />
+            <Route exact path="/" component={Portfolio} />
             <Route path="/portfolio" component={Portfolio} />
             {/* <main /> */}
             {/* <ViewPain /> */}
