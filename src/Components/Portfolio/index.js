@@ -12,8 +12,6 @@ export default class Portfolio extends Component {
 
   changeViewedProject(projectIndex) {
     let {currentlyViewed} = this.state;
-    // console.log(projectIndex)
-    console.log(currentlyViewed)
     if (projectIndex === currentlyViewed) {
       return;
     } else {

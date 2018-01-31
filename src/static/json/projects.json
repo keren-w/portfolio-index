@@ -2,28 +2,28 @@
     {
         "id": 1,
         "title": "Mockbnb",
-        "link-address": "mockbnb.kerenwebhome.com",
-        "description": "An Airbnb homes serction Reimplemention",
+        "link-address": "http://mockbnb.kerenwebhome.com",
+        "description": "An Airbnb homes section reimplemention.",
         "technologies": ["React.js", "Redux", "Express", "NodeJS", "Styled-Components", "MongoJS", "Mongoose"],
         "repo-address": "https://github.com/keren-w/mockbnb",
-        "project-main-image": ""
+        "project-main-image": "mockbnb-screenshot.jpg"
     }, 
     {
         "id": 2,
         "title": "hireMe",
-        "link-address": "hireme.kerenwebhome.com",
-        "description": "A job search MEAN stack application (mocked-up information)",
+        "link-address": "http://hireme.kerenwebhome.com",
+        "description": "A job search MEAN stack application (mocked-up information).",
         "technologies": ["Angular 1.66", "MongoJS", "NodeJS", "Express", "JSON Web Token"],
         "repo-address": "https://github.com/keren-w/hireMe",
-        "project-main-image": ""
+        "project-main-image": "hireme-screenshot.jpg"
     },
     {
         "id": 3,
         "title": "The Battleship Project",
         "link-address": "http://battleship.kerenwebhome.com/",
-        "description": "The well-known game for 2-end users",
+        "description": "The well-known game for 2-end users.",
         "technologies": ["NodeJS", "Express", "Vanilla JS", "socket.io", "mySQL"],
         "repo-address": "https://github.com/keren-w/Battleship",
-        "project-main-image": ""
+        "project-main-image": "battleship-screenshot.jpg"
     }
 ]

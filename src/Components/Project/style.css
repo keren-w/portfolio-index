@@ -1,50 +1,96 @@
-.p-item {
-    border-radius: 2px;
-    width: 32%;
-    padding: 0.5rem;
-    color: rgba(59, 90, 99, 1);
-  }
+.project-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.project-title:hover {
+  color: gray;
+}
+
+.project-description {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.tags-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #989e528a;
+  width: fit-content;
+  font-size: 0.8rem;
+  border-radius: 5%;
+  margin: 0 2% 2% 0;
+  padding: 2%;
+}
+
+.view-project {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: all 2s ease;
+}
+
+.hide-project {
+  opacity: 0;
+}
+
+.project-details {
+  width: 49%;
+  background: rgba(255, 255, 255, 0.5);
+  border: 0.5px solid #685c61;
+  padding: 1rem;
+  position: relative;
+}
+
+.project-details:hover div,
+.project-details:hover p,
+.project-details:hover .project-title,
+.project-details:hover .project-title:hover {
+  opacity: 0.5;
+}
+
+.project-preview:hover .project-img {
+  opacity: 0.2;
+}
+
+.project-details:hover,
+.project-preview:hover {
+  width: 49%;
+  height: 100%;
+  background: rgba(104,92,97,0.65); 
+  transition: all 500ms ease;
+}
+
+.project-details:hover:before,
+.project-preview:hover:before {
+  position: absolute;
+  top: 42%;
+  right: 0;
+  left: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  z-index: 999;
+  content: attr(data-hover);
+  color: white;
+}
+
+.project-preview {
+  width: 49%;
+  position: relative;
+  border: 0.5px solid #685c61;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
   
-  .project-title {
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-
-  .project-title:hover {
-    color: gray;
-  }
-
-  .p-item, .p-item a, .p-item a:visited {
-    color: black;
-  }
-
-  .tags-container {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .project-modal-container {
-    position: absolute;
-    background: rgba(85, 85, 85, 0.8);
-    top: 20%;
-    bottom: 20%;
-    left: 20%;
-    right: 20%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .project-modal {
-    background: lightgrey;
-    height: 100%;
-    width: 100%;
-    padding: 5%;
-  }
-
-  .projects-explained {
-    height: 100%;
-    width: 100%;
-  }
+}
