@@ -12,7 +12,6 @@
 .view-centerer {
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -42,4 +41,45 @@
 .projects-preview {
   width: 85%;
   overflow: hidden;
+}
+
+/************************* media queries **************************/
+
+@media screen and (max-width: 769px) {
+
+  .section-vertical-centerer {
+    padding-top: 0px;
+  }
+
+  .view-sizer {
+      flex-direction: column;
+      justify-content: flex-start;
+      border: none;
+      max-height: none;
+  }
+
+  .nav-projects {
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .project-link {
+    padding: 0 1rem 0 0;
+    margin: 1rem 0 0.5rem;
+  }
+
+  .projects-preview {
+    width: 100%;
+  }
+}
+
+@media screen and (min-height: 700px) {
+  .view-centerer {
+      align-items: flex-start;
+  }
+
+  .section-vertical-centerer {
+    padding-top: 4rem;
+  }
 }

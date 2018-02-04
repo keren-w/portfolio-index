@@ -4,7 +4,7 @@
         "title": "Mockbnb",
         "link-address": "http://mockbnb.kerenwebhome.com",
         "description": "An Airbnb homes section reimplemention.",
-        "technologies": ["React.js", "Redux", "Express", "NodeJS", "Styled-Components", "MongoJS", "Mongoose"],
+        "technologies": ["React.js", "Redux", "Express", "NodeJS", "Styled-Components", "MongoJS", "Mongoose", "Webpack"],
         "repo-address": "https://github.com/keren-w/mockbnb",
         "project-main-image": "mockbnb-screenshot.jpg"
     }, 
