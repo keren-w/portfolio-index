@@ -43,3 +43,28 @@
 
 /************************* media queries **************************/
 
+@media screen and (max-width: 480px) {
+
+  #menubar {
+    padding-bottom: 0;
+  }
+
+  #menubar div {
+    border: 0px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #menubar div>header {
+    padding-bottom: 0.75rem;
+  }
+  
+  .nav-categories {
+    background: #685C61;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .nav-categories li {
+    color: #DCE0DC;
+  }
+}
